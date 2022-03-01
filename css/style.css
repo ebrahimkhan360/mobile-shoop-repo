@@ -1,6 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 body{
     background-color: #b6b6b9;
+    font-family: 'Russo One', sans-serif;
 }
-h1{
-    color: #545486;
+.main-titele{
+    font-size: 60px
+    ;
+    white-space: nowrap;
+    position: relative;
+}
+.main-titele::before{
+    content: 'Mobile Shoop';
+    position: absolute;
+    color: #ad551a;
+    animation: typing 3s linear infinite;
+}
+@keyframes typing{
+0%{
+    content: 'M|';
+}
+4%{
+    content: 'Mo|';
+}
+8%{
+    content: 'Mob|';
+}
+12%{
+    content: 'Mobi|';
+}
+16%{
+    content: 'Mobil|';
+}
+20%{
+    content: 'Mobile|';
+}
+24%{
+    content: 'Mobile |';
+}
+28%{
+    content: 'Mobile S|';
+}
+32%{
+    content: 'Mobile Sh|';
+}
+36%{
+    content: 'Mobile Sho|';
+}
+40%{
+    content: 'Mobile Shoo|';
+}
+44%{
+    content: 'Mobile Shoop|';
+}
+48%,
+88%{
+    content: 'Mobile Shoop|';
+}
+89%{
+    content: 'Mobile Shoo|';
+}
+90%{
+    content: 'Mobile Sho|';
+}
+91%{
+    content: 'Mobile Sh|';
+}
+92%{
+    content: 'Mobile S|';
+}
+93%{
+    content: 'Mobile |';
+}
+94%{
+    content: 'Mobile|';
+}
+95%{
+    content: 'Mobil|';
+}
+96%{
+    content: 'Mobi|';
+}
+97%{
+    content: 'Mob|';
+}
+98%{
+    content: 'Mo|';
+}
+99%{
+    content: 'M|';
+}
+100%{
+    content: '|';
+}
+
 }
