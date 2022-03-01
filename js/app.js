@@ -23,9 +23,9 @@ const displayPhone = data => {
                      <h5 class="card-title">${data.brand}</h5>
                     <p>${data.phone_name}</p>
                     <p>${data.slug}</p>
-
-                </div>
-            </div>
+                    <div class="all-button">
+                    <button class="btn btn-outline-success" type="button" id="card-button">Feaser</button>
+                    </div>
         `;
         searchResult.appendChild(div);
     });

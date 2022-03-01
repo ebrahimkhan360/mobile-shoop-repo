@@ -3,8 +3,10 @@ body{
     background-color: #b6b6b9;
     font-family: 'Russo One', sans-serif;
 }
+/* title style  start*/
+
 .main-titele{
-    font-size: 60px
+    font-size: 40px
     ;
     white-space: nowrap;
     position: relative;
@@ -12,7 +14,7 @@ body{
 .main-titele::before{
     content: 'Mobile Shoop';
     position: absolute;
-    color: #ad551a;
+    color: #916546;
     animation: typing 3s linear infinite;
 }
 @keyframes typing{
@@ -94,3 +96,5 @@ body{
 }
 
 }
+
+/* title style end  */
