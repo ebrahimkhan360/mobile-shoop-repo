@@ -1,4 +1,8 @@
+// error handaling
+
 const error = document.getElementById("error")
+
+// Phone search
 
 const searchPhone = () => {
     error.innerText = ""
@@ -25,12 +29,12 @@ const displayPhone = data => {
             div.innerHTML = `
                 <div (${data.id})" class="card h-100">
                         <img src="${data.image}" class="card-img-top" alt="...">
-    
+    // csrd body
                     <div class="card-body">
                          <h5 class="card-title">${data.brand}</h5>
                         <p>${data.phone_name}</p>
                         <p>${data.slug}</p>
-    
+    // button
                         <div class="all-button">
                         <button onclick="loadPhone('${data.slug}')" class="btn btn-outline-success" type="button" id="card-button">Feaser</button>
                         </div>
@@ -39,15 +43,17 @@ const displayPhone = data => {
         });
     }
 }
+
 // detaile button
 
 const loadPhone = details => {
     console.log(details)
-    const url = `https://openapi.programming-hero.com/api/phone/${id}`;
+    const url = `https://openapi.programming-hero.com/api/phone/${details}`;
     fetch(url)
         .then(res => res.json())
         .then(data => displayPhoneDetail(data.data[0]));
 }
+
 // phone detail display
 
 const displayPhoneDetail = data => {
