@@ -14,7 +14,7 @@ body{
 .main-titele::before{
     content: 'Mobile Shoop';
     position: absolute;
-    color: #916546;
+    color: #946735;
     animation: typing 3s linear infinite;
 }
 @keyframes typing{

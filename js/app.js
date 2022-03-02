@@ -36,7 +36,7 @@ const displayPhone = data => {
                         <p>${data.slug}</p>
 
                         <div class="all-button">
-                        <button onclick="loadPhone('${data.slug}')" class="btn btn-outline-success" type="button" id="card-button">Feaser</button>
+                        <button onclick="loadPhone('${data.slug}')" class="btn btn-outline-success" type="button" id="card-button">Details</button>
                         </div>
             `;
             searchResult.appendChild(div);
@@ -58,10 +58,10 @@ const displayPhoneDetail = data => {
     if (data.releaseDate != 0 && data.others != 0 && data.slug != 'apple_iphone_13_mini-11104') {
         const details = document.getElementById('phone-details');
         details.textContent = '';
-        details.style.backgroundColor = '#fffe01';
-        const PhoneImg = document.createElement(div);
-        PhoneImg.classList.add('child');
-        PhoneImg.innerHTML = `
+        details.style.backgroundColor = '#8a9ceb';
+        const phoneImg = document.createElement('div');
+        phoneImg.classList.add('child');
+        phoneImg.innerHTML = `
     <image src="${data.image}">
     `;
         const phoneDetails = document.createElement('div');
@@ -70,9 +70,9 @@ const displayPhoneDetail = data => {
     <h5>Name: ${data.name}</h5>
     <h5>Realease Date: ${data.releaseDate}</h5>
     <h5 class="fw-bold">Main Features:-</h5>
-    <h5>Chipset: ${data.mainFeaturres.chip5et}</h5>
-    <h5>Display: ${data.mainFeaturres.display5ize}</h5>
-    <h5>Memory: ${data.mainFeaturres.memory}</h5>
+    <h5>ChipSet: ${data.mainFeatures.chipSet}</h5>
+    <h5>Display: ${data.mainFeatures.displaySize}</h5>
+    <h5>Memory: ${data.mainFeatures.memory}</h5>
     <h5>Bluetooth: ${data.others.Bluetooth}</h5>
     <h5>GPS: ${data.others.GPS}</h5>
     <h5>NFC: ${data.others.NFC}</h5>
@@ -80,14 +80,14 @@ const displayPhoneDetail = data => {
     <h5>USB: ${data.others.USB}</h5>
     <h5>WLAN: ${data.others.WLAN}</h5>
     <h5 class="fw-bold">Sensors</h5>
-    <h5>1.${data.mainFeaturres.sensors[0]}</h5>
-    <h5>2.${data.mainFeaturres.sensors[1]}</h5>
-    <h5>3.${data.mainFeaturres.sensors[2]}</h5>
-    <h5>4.${data.mainFeaturres.sensors[3]}</h5>
-    <h5>5.${data.mainFeaturres.sensors[4]}</h5>
-    <h5>6.${data.mainFeaturres.sensors[5]}</h5>
+    <h5>1.${data.mainFeatures.sensors[0]}</h5>
+    <h5>2.${data.mainFeatures.sensors[1]}</h5>
+    <h5>3.${data.mainFeatures.sensors[2]}</h5>
+    <h5>4.${data.mainFeatures.sensors[3]}</h5>
+    <h5>5.${data.mainFeatures.sensors[4]}</h5>
+    <h5>6.${data.mainFeatures.sensors[5]}</h5>
     `;
-        details.appendChild(PhoneImg);
+        details.appendChild(phoneImg);
         details.appendChild(phoneDetails);
     }
 }
